@@ -1,0 +1,10 @@
+dash
+dash-bootstrap-components
+plotly
+pandas
+numpy
+openpyxl
+weasyprint
+gunicorn
+pdfkit
+

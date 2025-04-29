@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: dashboard-dpu-sis
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python dashboard.py"
+    plan: free # ou o plano apropriado
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12 # Garanta que a versão é compatível
+      - key: PORT
+        value: 8050 # A porta que o app escuta
+
